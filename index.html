@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Iphones Online Shop</title>
+    <!--links for font insertaing icons from"font-awesome web"-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">-->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!--  Da me zka add ko google font de use kari dy ho link ye neshtaa nu fonts ba properly load kedal na. da me Montserrat font add ko landi link me hatam ko-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!--link to font google font for inserting font femilies-->
+    <!-- link of css file-->
+     <link rel="stylesheet" href="page1.css">
+
+
+    <!-- GALAT (HTML file ko CSS ke through link kiya hua tha yaha per)
+            <link rel="stylesheet" href="contact page.html">
+            Da me Remove Ko Zka che link siraf css da para ye
+    -->
+
+</head>
+<body>
+    <!-- Header-->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                    <!-- now from "font-awesome web"insert icon of iphone or other monile here-->
+                       <i class="fa-brands fa-apple"></i>
+                       <span id="appleBrand">Apple</span>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Shop now/index.html">Products</a></li>
+                    <li><a href="contact us/contact-us.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+
+
+            <!-- ===== HAMBURGER ICON (Mobile ke liye) ===== -->
+            <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+
+
+
+
+                <div class="nav-buttons">
+                                    <!-- ===== SEARCH BAR START ===== -->
+                    <!-- 
+                        Ye search input hai jahan user iphone ka naam likhe ga 
+                    -->
+                    <div class="search-box">
+                        
+
+
+                        <input type="text" id="search-input" placeholder="Search iPhone...">
+
+                        
+                        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+
+
+                    </div>
+                    <!-- ===== SEARCH BAR END ===== -->
+
+
+                    <!-- Sign in button -->
+                <a href="Signup page/signup.html" class="btn btn-secondary" id="signupBtn">Sign In</a>
+
+                    <!-- Signout button (Javascript se show/hide hota hai matlab user jese sigin ho jaye tho pir ye signout button show hoga pehly sy show nahi hoga mean user 1st time user aye tho ye show nahi hoga)-->
+                <a href="#" class="btn btn-secondary" id="signoutBtn" style="display:none">
+                Sign Out
+                </a>
+
+                <!--order button-->
+                <!--<a href="#" class="btn btn-primary">Order Online</a>-->
+
+            </div>
+
+        </div>
+    </header>
+
+     <!-- ============ Hero section ================= -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">
+                    <!-- i ethically sourced links-->Trusted Iphone Sellers
+                </div>
+                <h1 class="hero-title">Trust Iphone <br><span>Online Shop</span></h1>
+                <p class="hero-text">
+                    We provide original iPhones with warranty,
+                    trusted service and customer satisfaction.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="Shop now/index.html" class="btn btn-secondary">Visit Iphone Store</a>
+                </div>
+            </div>
+            <img src="iphone16.png" alt="Iphone display Image" width="330">
+            
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ===========  PRODUCTS SECTION =============-->
+    <section class="products" id="products">  <!-- id = "products"-->
+       <div class="container">
+
+
+            <div class="section-header">
+                <div class="section-subtitle"> Our Collection</div>
+
+
+                <h2 class="section-title">Trusted Iphone Brands</h2>
+
+
+                <p class="section-desc">
+                    Carefully selected iPhones to meet customer needs.
+                </p>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- ===== PRODUCT CARD ===== -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img  src="ipone image.jpg"  alt="Iphone 16">
+                    </div>
+
+
+                    <div class="product-information">
+
+                        <div class="product-tag">Gen-17</div>
+
+                        <!--class spelling mistake porduct wrong product correct-->
+                        <h3 class="product-title1"> Iphone 17</h3>
+
+
+                        <p class="product-desc">High performance with customer satisfaction.
+                        </p>
+
+
+                        <div class="product-footer">
+                            <div class="product-price">$140</div>
+                            <div class="rating">
+                                <!--Rating star here-->
+
+                                <!-- yaha i tag ke andar ye all i tags raky thy me ny os ko hatam keya yani esa tha <i> <i>...</i> </i> <i> <i>...</i></i>  <i><i>...</i></i>-->
+                                 <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second card-->
+                  <div class="product-card">
+                    <div class="product-img">
+                        <img src="iphone3.jpg" alt="Iphone 17">
+                    </div>
+                    <div class="product-information">
+                        <div class="product-tag">Gen-16</div>
+                        <h3 class="product-title2"> Iphone 16
+                        </h3>
+                        <p class="product-desc">
+                            High performance with customer satisfaction.
+                        </p>
+                        <div class="product-footer">
+                            <div class="product-price">$140</div>
+                            <div class="rating">
+                                <!--Rating star here-->
+                                <i><i class="fa-solid fa-star"></i></i>
+                                <i><i class="fa-solid fa-star"></i></i>
+                                <i><i class="fa-solid fa-star"></i></i>
+                                <i><i class="fa-solid fa-star"></i></i>
+                                <i><i class="fa-solid fa-star-half-stroke"></i></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thrid card-->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="ipone image.jpg"   alt=" Iphone 17">
+                    </div>
+                    <div class="product-information">
+                        <div class="product-tag">Gen-17</div>
+
+                        <h3 class="product-title3"> Iphone 17
+                        </h3>
+                        <p class="product-desc">
+                            High performance with customer satisfaction.
+                        </p>
+
+                        <div class="product-footer">
+                            <div class="product-price">$140</div>
+                            <div class="rating">
+                                <!--Rating star here-->
+                                 <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <!-- ======= FOOTER OF THE HOME PAGE ========== -->
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-column">
+                    <h3>About Iphone Store</h3>
+
+                    <!-- Yaha per inline css use ho rahi thee me ny osko hata leya style="color:#D4AF37; margin-bottom: 20px;" css file me handle hoga -->
+                    <p class="footer-text">
+                        Trusted online iPhone store with warranty,
+                        PTA approved devices and customer satisfaction.
+                    </p>
+
+
+                    <div class="social-links">
+                        <!--<a href="#"><i class="fab fa-facebook-f"></i></a>  add social links-->
+                        <a><i class="fa-brands fa-facebook-f"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                        <a><i class="fa-brands fa-twitter"></i></a>
+                        <a><i class="fa-brands fa-youtube"></i></a>
+                        
+                    </div>
+                </div>
+
+
+                <!-- ❌ GALAT ATTRIBUTE
+                 virtualkeyboardpolicy="footer-column"
+                 ✅ Correct class -->
+
+                <div class="footer-column">
+                    <h3>Quick links</h3>
+                    <ul class="footer-links">
+                        <!--<li><a href="#">sumsung</a></li> add links of the extra brend i have-->
+                        <li><a href="#">iPhone 15</a></li>
+                        <li><a href="#">iPhone 15 Pro</a></li>
+                        <li><a href="#">iPhone 15 Pro Plus</a></li>
+                        <li><a href="#">iPhone 15 Pro Max</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>                
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-location-dot"></i>Govt. of commerce 2,MARDAN</li>
+                        <li><i class="fa-solid fa-phone"></i>(+92)-315-9851115/+92 312 6346940</li>
+                        <li><i class="fa-regular fa-envelope"></i>jalalkhan1afrdi@gmail.com</li>
+                        <li><i class="fa-regular fa-clock"></i>MON-SAT: 7AM-8PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 Trust Branded iPhones. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    
+<script src="page1.js"></script>
+</body>
+</html>

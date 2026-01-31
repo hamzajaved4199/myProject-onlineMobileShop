@@ -1,0 +1,767 @@
+:root{
+    --brown-main: #6F4E37;
+    --brown-dark: #3E2723;
+
+    --orange-main: #D48837;
+    --orange-dark: #C76A1F;
+
+    --white-main: #FFFFFF;
+    --white-soft: #F5F5F5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============= BODY ============== */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:var(--white-soft);
+    color: var(--brown-dark);
+    line-height: 1.7;
+    overflow-x: hidden;
+
+}
+
+/* ============= CONTAINER ============== */
+
+.container{
+    width: 90%;
+    margin: auto;
+
+}
+
+/* Header and Navigation*/
+
+/* ================= HEADER ================= */
+
+header{
+    background: var(--brown-dark);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    padding: 10px 0;
+    /*transition: all 0.4s ease;*/
+     
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+/* ================= LOGO ================= */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  
+}
+
+.logo i{
+    color:red;
+    font-size: 60px;
+   
+}
+
+#appleBrand{
+    color: white;
+    font-size: 30px;
+    margin-left: 5px;
+    font-weight: bold;
+    position: static;
+}
+
+
+nav ul{
+    display: flex;
+    gap: 60px;/* officaly 35px*/
+    list-style: none;/* here is some dout about gap*/
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    color: var(--white-main);/*medium;*/
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px;
+   /*  transition: all 0.3s ease; */
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--orange-main); /* gold;*/
+    transition: width 0.4s ease;
+
+}
+
+nav a:hover:after{
+    width: 70px;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 15px; /* here is also problem of gap*/
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    /* border: none; 
+    font-size: 16px;*/
+}
+
+.btn-primary{
+    background: var(--orange-main);/*medium*/
+    color: var(--white-main);
+}
+
+.btn-primary:hover{
+    background: var(--orange-dark);/*dark*/
+    transform: translateY(-3px);
+
+}
+
+/* Secondary button */
+.btn-secondary{
+    /* background:transparent;*/
+    color:var(--white-main);/*medium*/
+    border: 2px solid var(--orange-main); 
+}
+
+.btn-secondary:hover{
+    background: var(--orange-main);
+    color: var(--white-main);
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+
+
+/* ================= SEARCH BAR STYLE START ================= */
+
+/*
+   Ye poori search bar ka container hai
+   Isko navbar ke buttons ke sath align kiya gaya hai
+*/
+.search-box {
+    position: relative;              /* icon ko input ke andar rakhne ke liye */
+    display: flex;
+    align-items: center;
+    background-color: #3E2723;       /* navbar jaisa dark color */
+    border: 2px solid  var(--orange-main);       /* golden border */
+    border-radius: 25px;             /* rounded look */
+    height: 48px;                    /* navbar buttons ke barabar */
+    padding: 0 12px;
+    margin-right: 10px;
+}
+
+/*
+   Input field ka style
+*/
+.search-box input {
+    background: transparent;         /* white background hataya */
+    border: none;                    /* border remove */
+    outline: none;                     
+    font-size: 16px;
+    width: 200px;                     /* choti neat width */
+    color: white;   
+    font-weight: bold;                 
+}
+
+/*
+   Placeholder ka color
+*/
+.search-box input::placeholder {
+    color: white;
+}
+
+/*
+   Search icon ka style
+*/
+.search-box i { 
+    color: white;                
+    font-size: 16px;
+    cursor: pointer;                 /* click able */
+    margin-left: 6px;
+}
+
+
+
+.search-box:hover {
+   background: var(--orange-main);
+   transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* ================= SEARCH BAR STYLE END ================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= HERO SECTION ================= */
+.hero{
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(135deg, var(--brown-dark), var(--brown-main));
+    z-index: -1;
+}
+
+.hero .container{
+    display: flex;
+}
+
+.hero-content{
+    width: 750px;
+    color:white;/*text light*/
+   /*  animation: fadeInUp 1s ease-out; */
+}
+
+.hero-subtitle{
+    color: #C4A484;
+    font-size: 20px;
+    /* color: #C4A484; */ /* account*/
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-subtitle::before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: gold;/*gold*/
+    
+}
+
+.hero-title{
+    font-size: 54px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    color: var(--white-main);/*light*/
+    
+}
+
+/*.hero-title span{
+    color: #D4AF37;
+    position: relative;
+
+}*/
+
+.hero-text{
+   font-size: 16px;
+   margin-bottom: 40px;
+   max-width: 700px;
+}
+
+.hero-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+
+
+
+/* ================= PRODUCTS ================= */
+/* Product section */
+.products{
+    padding: 50px 0;
+    /*position: relative;*/
+    background-color:var(--brown-dark);
+    border-top: 4px solid var(--orange-main);/*c gold*/
+}
+
+.section-header{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.section-subtitle{
+    font-size: 20px;
+    color: gold;/*c gold*/
+    margin-bottom: 15px;
+}
+
+.section-title{
+    font-size: 42px;
+    color:goldenrod;/*c gold*/
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.section-title::after {
+    content:"";
+    position:absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: gold;/*gold*/
+}
+
+.section-desc{
+    font-size: 18px;
+    color: #F5F5DC;/*text light*/
+
+}
+
+/* ================= PRODUCT GRID ================= */
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+    gap: 40px;
+    
+}
+
+.product-card{
+    background: var(--brown-main);/*copy dark*/
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+    top: 0;
+}
+
+.product-card:hover {
+    transform: translatey(-15px);
+    border: 2px solid var(--orange-main);
+}
+
+.product-img {
+    height: 400px;
+    overflow: hidden;
+}
+
+.product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.product-card:hover .product-img img{
+    transform: scale(1.05);
+}
+
+/* ================= PRODUCT INFO ================= */
+.product-information{
+    padding: 25px;
+    position: relative;
+}
+
+.product-tag{
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    background: var(--orange-main); /*gold*/
+    padding: 8px 19px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    }
+    
+    .product-title1{
+        color: #f3f3f3;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .product-title2{
+        color: #f3f3f3;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .product-title3{
+         color: #f3f3f3;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .product-desc{
+        color: #f3f3f3;
+        margin-bottom: 20px;
+        font-size: 16px;
+        
+    }
+    
+
+    .product-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product-price{
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--orange-main);/*gold*/
+
+    }
+
+    .rating{
+        color: var(--orange-main);/*gold*/
+        font-size: 16px;
+
+    }
+
+    h1,h2,h3,h4{
+        font-family: 'playfair display',serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;    
+    }
+
+    /*footer of the home page*/
+    /* ================= FOOTER ================= */
+
+    footer{
+        background: #6F4E37;
+        color: white;
+        padding: 70px 0 30px;
+        position: relative;
+        border-top: 4px solid var(--orange-main);
+    }
+
+    .footer-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-bottom: 50px;
+     }
+
+     .footer-column h3{
+        font-size: 22px;
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 15px;
+
+     }
+
+     .footer-column h3::after{
+        content:"";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: gold;
+     }
+
+     .footer-links{
+        list-style: none;
+     }
+
+     .footer-links li{
+        margin-bottom: 15px;
+
+     }
+
+     .footer-links a{
+        color: var(--white-main);
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+     }
+
+     .footer-links a:hover{
+        color:var(--orange-main);
+        padding-left: 5px;
+        
+     }
+
+     .social-links{
+        display: flex;
+        gap: 15px;
+        margin-top:20px;
+     }
+
+     .social-links a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 50%;
+        color: var(--white-main);/*copy creem*/
+        font-size: 15px;
+        transition: all 0.3s ease;
+     }
+
+     .social-links a:hover{
+        background:var(--orange-main);
+        transform: translateY(-3px);
+     }
+
+     .copyright{
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        color: white;
+        font-size: 15px;
+
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* ================= HAMBURGER MENU ================= */
+
+/* Desktop par hamburger hide rahe */
+.hamburger{
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px){
+
+    /* Hamburger show ho jaye */
+    .hamburger{
+        display: block;
+    }
+
+    /* Navbar + buttons hide by default */
+    nav,
+    .nav-buttons{
+        display: none;
+        width: 100%;
+    }
+
+    /* Jab menu open ho */
+    nav.active,
+    .nav-buttons.active{
+        display: flex;
+        flex-direction: column;
+        background: var(--brown-dark);
+        padding: 15px 0;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Nav links vertical ho jaye */
+    nav ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* Responsive Design */
+     /* ================= MOBILE RESPONSIVE (480px tak) ================= */
+@media (max-width: 480px) {
+
+    /* Header Slightly compact for mobile */
+    .header-container{
+        flex-direction: column;
+        gap: 10px; 
+        /* mobile elements up and down */
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        /* mobile menu is vertical */
+    }
+
+    .nav-buttons{
+        flex-direction: column;
+        gap: 10px;
+        /* buttons down down */
+    }
+
+    /* Hero section */
+    .hero{
+        height: auto;
+        padding: 120px 0 50px 0;
+        /* mobile me full height ki zarurat nahi */
+    }
+
+    .hero .container{
+        flex-direction: column;
+        text-align: center;
+        /* image aur text center ho jaye */
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-title{
+        font-size: 32px;
+        /* mobile ke liye font chota */
+    }
+
+    .hero img{
+        width: 100%;
+        margin-top: 20px;
+        /* image responsive */
+    }
+
+    /* Products */
+    .products{
+        padding: 60px 0;
+        /* mobile me padding kam */
+    }
+
+    .section-title{
+        font-size: 28px;
+        /* heading choti */
+    }
+
+    /* Footer */
+    .footer-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+        /* footer ek column me */
+    }
+}
+
+
+
+
+
+
+
+
+/* ================= TABLET RESPONSIVE (768px tak) ================= */
+@media (max-width: 768px) {
+
+    nav ul{
+        gap: 30px;
+        /* tablet me menu spacing kam */
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-title{
+        font-size: 40px;
+        /* tablet ke liye medium size */
+    }
+
+    .hero img{
+        width: 300px;
+        /* tablet ke liye image thori choti */
+    }
+
+    .product-img{
+        height: 300px;
+        /* tablet me product image height kam */
+    }
+}
+
+
+
+
+/* ================= SMALL LAPTOP RESPONSIVE ================= */
+@media (max-width: 1024px){
+
+    .hero-content{
+        width: 600px;
+        /* laptop me text width adjust */
+    }
+
+    .hero-title{
+        font-size: 46px;
+        /* laptop ke liye balanced font */
+    }
+}
